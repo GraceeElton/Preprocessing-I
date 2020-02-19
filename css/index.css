@@ -85,7 +85,6 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -133,4 +132,56 @@ table {
 html,
 body {
   height: 100%;
+}
+body {
+  background-image: url(https://images.unsplash.com/photo-1465173121987-373740a169b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  border-top: 20px solid white;
+  border-bottom: 20px solid white;
+  border-left: 40px solid white;
+  border-right: 40px solid white;
+}
+.whole {
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 2%;
+  border-bottom: 2px dashed black;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  nav a {
+    justify-content: center;
+  }
+}
+a:hover {
+  color: black;
+}
+.info {
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  .info {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.info h2 {
+  font-family: 'Ruda', sans-serif;
+  color: white;
+  padding: 1%;
+}
+.info p {
+  font-family: 'Roboto Slab', serif;
+  color: black;
 }
