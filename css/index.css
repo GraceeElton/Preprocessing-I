@@ -133,6 +133,20 @@ html,
 body {
   height: 100%;
 }
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ruda';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ruda Regular'), local('Ruda-Regular'), url(https://fonts.gstatic.com/s/ruda/v11/k3kfo8YQJOpFqngdbQ.ttf) format('truetype');
+}
 body {
   background-image: url(https://images.unsplash.com/photo-1465173121987-373740a169b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
   background-repeat: no-repeat;
@@ -143,6 +157,11 @@ body {
   border-left: 40px solid white;
   border-right: 40px solid white;
 }
+@media (max-width: 500px) {
+  body {
+    border: 8px solid black;
+  }
+}
 .whole {
   max-width: 90%;
   margin: 0 auto;
@@ -151,23 +170,29 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: lightcoral;
   padding: 2%;
   border-bottom: 2px dashed black;
+}
+@media (max-width: 500px) {
+  header {
+    justify-content: space-between;
+  }
 }
 nav a {
   color: black;
   text-decoration: none;
 }
 a:hover {
-  color: white;
+  color: lightcoral;
 }
 .info {
   padding: 1%;
+  text-align: center;
 }
 .info h2 {
   font-family: 'Ruda', sans-serif;
-  color: white;
+  color: lightcoral;
   padding: 1%;
 }
 .info p {

@@ -57,6 +57,8 @@ html, body {
     height: 100%;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda&display=swap');
+
 @main-color:black;
 @main-font:'Roboto Slab', serif;
 @heading-font:'Ruda', sans-serif;
@@ -80,6 +82,15 @@ body {
 	border-bottom:20px solid white;
 	border-left:40px solid white;
 	border-right:40px solid white;
+
+	@media( max-width: 500px ) {
+		border: 8px solid black;
+
+
+	  }
+
+
+
 } //end of body
 
 
@@ -92,11 +103,13 @@ body {
 
 header {
 	.space-between();
-	color: white;
+	color: lightcoral;
 	padding:2%;
 	border-bottom: 2px dashed @main-color;
 
-	
+	@media( max-width: 500px ) {
+		justify-content: space-between;
+	  }// this closes the media query for the header
 
 }//end of header
 
@@ -110,7 +123,7 @@ nav a{
 } //end of nav a. 
 
 a:hover {
-	color: white;
+	color: lightcoral;
 } //end of a:hover.
 
 
@@ -120,13 +133,16 @@ a:hover {
 
 .info {
 	padding:1%;
+	text-align: center;
+	
 	
 
 
 	h2 {
 		font-family: @heading-font;
-		color:white;
+		color:lightcoral;
 		padding:1%;
+		
 		
 	} // end of h2
 
